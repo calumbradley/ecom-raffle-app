@@ -3,8 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import { faGolfBall } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart, faGolfBall } from "@fortawesome/free-solid-svg-icons";
 
 function Nav() {
   const [cartItems, setCartItems] = useState(0);
@@ -21,7 +20,6 @@ function Nav() {
               className="h-7 w-7 mr-1 object-contain"
               icon={faGolfBall}
             />
-            <FontAwesomeIcon />
             <span className="text-xl font-primary font-bold tracking-tight pt-1">
               {process.env.NEXT_PUBLIC_SITE_TITLE}
             </span>
