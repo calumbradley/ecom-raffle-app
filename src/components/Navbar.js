@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faGolfBall } from "@fortawesome/free-solid-svg-icons";
 
 function Nav() {
   const [cartItems, setCartItems] = useState(0);
@@ -13,13 +14,14 @@ function Nav() {
       <div className="flex items-center justify-between mx-auto max-w-6xl px-6 pb-2 pt-4 md:pt-6">
         <Link href="/" className="cursor-pointer">
           <h1 className="flex no-underline">
-            <img
-              height="32"
-              width="32"
+            <FontAwesomeIcon
+              height="28"
+              width="28"
               alt="logo"
-              className="h-8 w-8 mr-1 object-contain"
-              src="/icon.svg"
+              className="h-7 w-7 mr-1 object-contain"
+              icon={faGolfBall}
             />
+            <FontAwesomeIcon />
             <span className="text-xl font-primary font-bold tracking-tight pt-1">
               {process.env.NEXT_PUBLIC_SITE_TITLE}
             </span>
