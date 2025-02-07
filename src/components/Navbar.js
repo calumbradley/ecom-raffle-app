@@ -12,12 +12,12 @@ function Nav() {
     <header className="border-b border-palette-lighter sticky top-0 z-20 bg-white">
       <div className="flex items-center justify-between mx-auto max-w-6xl px-6 pb-2 pt-4 md:pt-6">
         <Link href="/" className="cursor-pointer">
-          <h1 className="flex no-underline">
+          <h1 className="flex no-underline font-primary">
             <FontAwesomeIcon
               height="28"
               width="28"
               alt="logo"
-              className="h-7 w-7 mr-1 object-contain"
+              className="text-palette-primary h-7 w-7 mr-1 object-contain"
               icon={faGolfBall}
             />
             <span className="text-xl font-primary font-bold tracking-tight pt-1">
