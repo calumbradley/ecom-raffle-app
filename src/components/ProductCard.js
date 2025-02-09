@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Price from "@/components/Price";
-import truncateText from "@utils/truncateText";
+import truncateText from "@/utils/truncateText";
 
 const ProductCard = ({ product }) => {
   const handle = product.node.handle;
