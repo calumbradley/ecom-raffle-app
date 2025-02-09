@@ -16,7 +16,7 @@ Welcome to the Ecom Raffle App! This application is designed to facilitate raffl
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ecom-raffle-app.git
+   git clone git@github.com:calumbradley/ecom-raffle-app.git
    ```
 2. Navigate to the project directory:
    ```bash
