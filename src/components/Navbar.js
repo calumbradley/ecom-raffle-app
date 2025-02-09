@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faGolfBall } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +12,7 @@ function Nav() {
     <header className="border-b border-palette-lighter sticky top-0 z-20 bg-white">
       <div className="flex items-center justify-between mx-auto max-w-6xl px-6 pb-2 pt-4 md:pt-6">
         <Link href="/" className="cursor-pointer">
-          <h1 className="flex no-underline font-primary">
+          <h1 className="flex no-underline">
             <FontAwesomeIcon
               height="28"
               width="28"
@@ -20,7 +20,7 @@ function Nav() {
               className="text-palette-primary h-7 w-7 mr-1 object-contain"
               icon={faGolfBall}
             />
-            <span className="text-xl font-primary font-bold tracking-tight pt-1">
+            <span className="text-xl font-bold tracking-tight pt-1">
               {process.env.NEXT_PUBLIC_SITE_TITLE}
             </span>
           </h1>
