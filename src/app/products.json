@@ -1,0 +1,306 @@
+{
+  "products": [
+    {
+      "node": {
+        "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzE=",
+        "title": "Callaway Golf Club Set",
+        "description": "Complete set of Callaway golf clubs for all skill levels.",
+        "handle": "callaway-golf-club-set",
+        "images": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMTE=",
+                "originalSrc": "https://example.com/images/callaway-golf-club-set-1.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "Callaway Golf Club Set Image 1"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMTI=",
+                "originalSrc": "https://example.com/images/callaway-golf-club-set-2.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "Callaway Golf Club Set Image 2"
+              }
+            }
+          ]
+        },
+        "variants": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xMQ==",
+                "title": "Standard",
+                "price": "299.99"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xMg==",
+                "title": "Professional",
+                "price": "499.99"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "node": {
+        "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzI=",
+        "title": "Titleist Golf Balls",
+        "description": "High-quality Titleist golf balls for maximum performance.",
+        "handle": "titleist-golf-balls",
+        "images": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjE=",
+                "originalSrc": "https://example.com/images/titleist-golf-balls-1.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "Titleist Golf Balls Image 1"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjI=",
+                "originalSrc": "https://example.com/images/titleist-golf-balls-2.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "Titleist Golf Balls Image 2"
+              }
+            }
+          ]
+        },
+        "variants": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8yMQ==",
+                "title": "Pack of 12",
+                "price": "19.99"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8yMg==",
+                "title": "Pack of 24",
+                "price": "34.99"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "node": {
+        "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzM=",
+        "title": "Nike Golf Glove",
+        "description": "Comfortable and durable Nike golf glove.",
+        "handle": "nike-golf-glove",
+        "images": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMzE=",
+                "originalSrc": "https://example.com/images/nike-golf-glove-1.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "Nike Golf Glove Image 1"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMzI=",
+                "originalSrc": "https://example.com/images/nike-golf-glove-2.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "Nike Golf Glove Image 2"
+              }
+            }
+          ]
+        },
+        "variants": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMQ==",
+                "title": "Small",
+                "price": "14.99"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMg==",
+                "title": "Medium",
+                "price": "14.99"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMw==",
+                "title": "Large",
+                "price": "14.99"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "node": {
+        "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ=",
+        "title": "TaylorMade Golf Bag",
+        "description": "Spacious and durable TaylorMade golf bag.",
+        "handle": "taylormade-golf-bag",
+        "images": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvNDE=",
+                "originalSrc": "https://example.com/images/taylormade-golf-bag-1.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "TaylorMade Golf Bag Image 1"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvNDI=",
+                "originalSrc": "https://example.com/images/taylormade-golf-bag-2.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "TaylorMade Golf Bag Image 2"
+              }
+            }
+          ]
+        },
+        "variants": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MQ==",
+                "title": "Standard",
+                "price": "149.99"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80Mg==",
+                "title": "Deluxe",
+                "price": "199.99"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "node": {
+        "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzU=",
+        "title": "Ping Golf Putter",
+        "description": "Precision-engineered Ping golf putter.",
+        "handle": "ping-golf-putter",
+        "images": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvNTE=",
+                "originalSrc": "https://example.com/images/ping-golf-putter-1.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "Ping Golf Putter Image 1"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvNTI=",
+                "originalSrc": "https://example.com/images/ping-golf-putter-2.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "Ping Golf Putter Image 2"
+              }
+            }
+          ]
+        },
+        "variants": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC81MQ==",
+                "title": "Standard",
+                "price": "129.99"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC81Mg==",
+                "title": "Deluxe",
+                "price": "179.99"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "node": {
+        "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY=",
+        "title": "Adidas Golf Shoes",
+        "description": "Comfortable and stylish Adidas golf shoes.",
+        "handle": "adidas-golf-shoes",
+        "images": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvNjE=",
+                "originalSrc": "https://example.com/images/adidas-golf-shoes-1.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "Adidas Golf Shoes Image 1"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvNjI=",
+                "originalSrc": "https://example.com/images/adidas-golf-shoes-2.jpg",
+                "height": 1000,
+                "width": 1000,
+                "altText": "Adidas Golf Shoes Image 2"
+              }
+            }
+          ]
+        },
+        "variants": {
+          "edges": [
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC82MQ==",
+                "title": "Size 9",
+                "price": "99.99"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC82Mg==",
+                "title": "Size 10",
+                "price": "99.99"
+              }
+            },
+            {
+              "node": {
+                "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC82Mw==",
+                "title": "Size 11",
+                "price": "99.99"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
