@@ -11,18 +11,9 @@ const ProductCard = ({ product }) => {
   const price = product.node.variants.edges[0].node.price;
   const imageNode = product.node.images.edges[0].node;
 
-  console.log(id);
-
   return (
-    <Link
-      href={{
-        pathname: `/products/${handle}`,
-        query: { id, name: title },
-      }}
-      passHref
-      legacyBehavior
-    >
-      <a className="h-120 w-72 rounded shadow-lg mx-auto border border-palette-lighter">
+    <Link href={`/products/${handle}`} passHref>
+      <div className="h-120 w-72 rounded shadow-lg mx-auto border border-palette-lighter">
         <div className="h-72 border-b-2 border-palette-lighter relative">
           <Image
             src={imageNode.originalSrc}
@@ -45,7 +36,7 @@ const ProductCard = ({ product }) => {
             <Price currency="$" num={price} numSize="text-lg" />
           </div>
         </div>
-      </a>
+      </div>
     </Link>
   );
 };

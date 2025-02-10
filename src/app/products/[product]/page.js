@@ -1,29 +1,13 @@
 "use client";
-import { useParams, useSearchParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function ProductPage() {
-  const { product } = useParams();
-  const searchParams = useSearchParams();
+  const { handle } = useParams();
   const [productData, setProductData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const id = searchParams.get("id");
-    const name = searchParams.get("name");
-
-    // async function fetchProductData() {
-    //   // Replace this URL with your actual API endpoint
-    //   const res = await fetch(`/api/products/${id}`);
-    //   const data = await res.json();
-    //   setProductData(data);
-    // }
-
-    // if (id && name) {
-    //   fetchProductData();
-    // }
-  }, [searchParams]);
-
-  if (!productData) {
+  if (loading) {
     return <div>Loading...</div>;
   }
 
