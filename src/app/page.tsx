@@ -1,5 +1,5 @@
-import StoreHeading from "@components/StoreHeading";
-import ProductListings from "@components/ProductListings";
+import StoreHeading from "@/components/StoreHeading";
+import ProductListings from "@/components/ProductListings";
 import data from "./products.json";
 
 export default function Home() {
