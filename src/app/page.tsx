@@ -1,9 +1,20 @@
+"use client";
+
 import StoreHeading from "@/components/StoreHeading";
 import ProductListings from "@/components/ProductListings";
-import data from "./products.json";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const products = data.products;
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:4000/")
+      .then((response) => response.json())
+      .then((data) => {
+        setProducts(data.products);
+      })
+      .catch((error) => console.error("Error fetching products:", error));
+  }, []);
 
   return (
     <div className="">
