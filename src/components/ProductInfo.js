@@ -8,7 +8,11 @@ function ProductInfo({ title, description, price }) {
       </h1>
       <p className="font-medium text-lg">{description}</p>
       <div className="text-xl text-palette-primary font-medium py-4 px-1">
-        <Price currency="$" num={price} numSize="text-2xl" />
+        <Price
+          currency={process.env.NEXT_PUBLIC_CURRENCY}
+          num={price}
+          numSize="text-2xl"
+        />
       </div>
     </div>
   );
