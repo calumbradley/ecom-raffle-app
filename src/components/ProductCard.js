@@ -12,13 +12,14 @@ const ProductCard = ({ product }) => {
   const imageNode = product.node.images.edges[0].node;
 
   return (
-    <Link href={`/products/${handle}`} passHref>
+    <Link href={`/products/${id}`} passHref>
       <div className="h-120 w-72 rounded shadow-lg mx-auto border border-palette-lighter">
         <div className="h-72 border-b-2 border-palette-lighter relative">
           <Image
             src={imageNode.originalSrc}
             alt={imageNode.altText}
-            layout="fill"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="transform duration-500 ease-in-out hover:scale-110"
           />
         </div>
