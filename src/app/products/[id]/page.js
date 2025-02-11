@@ -2,6 +2,7 @@
 import { useParams } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
 import { ProductContext } from "@/context/ProductContext";
+import ProductSection from "@/components/ProductSection";
 
 export default function ProductPage() {
   const { id } = useParams();
@@ -11,13 +12,12 @@ export default function ProductPage() {
 
   useEffect(() => {
     if (productData) {
-      setProduct(
-        productData.find((i) => {
-          return i.node.id === decodedId;
-        })
-      );
+      const foundProduct = productData.find((i) => i.node.id === decodedId);
+      if (foundProduct) {
+        setProduct(foundProduct.node);
+      }
     }
-  }, [id, productData]);
+  }, [decodedId, productData]);
 
   useEffect(() => {
     if (product) {
@@ -31,10 +31,7 @@ export default function ProductPage() {
 
   return (
     <div className="min-h-screen py-12 sm:pt-20">
-      <h1>Product: {product.node.title}</h1>
-      <p>{product.node.description}</p>
-      <p>Price: ${product.node.price}</p>
-      <img src={product.node.imageSrc} alt={product.node.imageAlt} />
+      <ProductSection productData={product} />
     </div>
   );
 }
