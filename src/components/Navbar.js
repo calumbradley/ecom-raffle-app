@@ -14,13 +14,12 @@ function Nav() {
         <Link href="/" className="cursor-pointer">
           <h1 className="flex no-underline">
             <FontAwesomeIcon
-              height="28"
-              width="28"
+              size="lg"
               alt="logo"
               className="text-palette-primary h-7 w-7 mr-1 object-contain"
               icon={faGolfBall}
             />
-            <span className="text-xl font-bold tracking-tight pt-1">
+            <span className="text-xl font-bold tracking-tight pt-1 font-primary">
               {process.env.NEXT_PUBLIC_SITE_TITLE}
             </span>
           </h1>
@@ -28,8 +27,9 @@ function Nav() {
         <div>
           <Link href="/cart" className="relative" aria-label="cart">
             <FontAwesomeIcon
-              className="text-palette-primary w-6 m-auto"
+              className="text-palette-primary w-8 m-auto"
               icon={faShoppingCart}
+              size="lg"
             />
             {cartItems === 0 ? null : (
               <div className="absolute top-0 right-0 text-xs bg-yellow-300 text-gray-900 font-semibold rounded-full py-1 px-2 transform translate-x-10 -translate-y-3">
