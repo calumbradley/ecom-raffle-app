@@ -21,6 +21,7 @@ const ProductCard = ({ product }) => {
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="transform duration-500 ease-in-out hover:scale-110"
+            priority
           />
         </div>
         <div className="h-48 relative">
