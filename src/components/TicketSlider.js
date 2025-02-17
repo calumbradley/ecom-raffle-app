@@ -14,7 +14,7 @@ const TicketSlider = ({ totalTickets }) => {
     <div className="space-y-4 p-4 border border-gray-200 rounded-lg">
       {/* Slider Label */}
       <div className="flex justify-between items-center">
-        <label className="text-sm font-semibold text-gray-700">
+        <label className="text-xs font-semibold text-gray-700">
           Select the number of tickets:
         </label>
         <span className="text-lg font-semibold text-palette-primary">
