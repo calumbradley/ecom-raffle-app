@@ -5,11 +5,11 @@ const QuestionAnswer = ({ question, answers, companyAddress }) => {
   const [entryType, setEntryType] = useState("online"); // 'online' or 'postal'
 
   return (
-    <div className="space-y-4 p-4 border border-gray-200 rounded-lg relative flex flex-col">
+    <div className="space-y-4 p-4 border border-gray-200 rounded-lg relative flex flex-col h-[275px]">
       {/* Content */}
       <div
         className={`flex-1 ${
-          entryType === "postal" ? "overflow-y-auto max-h-75" : ""
+          entryType === "postal" ? "overflow-y-auto" : ""
         } pb-14`}
       >
         {entryType === "online" ? (
@@ -38,7 +38,7 @@ const QuestionAnswer = ({ question, answers, companyAddress }) => {
             </div>
           </>
         ) : (
-          <div className="text-sm text-gray-700 space-y-3 max-h-75 overflow-y-auto">
+          <div className="text-sm text-gray-700 space-y-3">
             <p>
               You may enter the competition for free by sending your entry on an
               unenclosed postcard by first class post to the Promoter at the
