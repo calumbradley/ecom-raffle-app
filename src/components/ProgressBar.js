@@ -1,5 +1,5 @@
-const ProgressBar = ({ sold, total }) => {
-  const percentage = (sold / total) * 100;
+const ProgressBar = ({ soldTickets, totalTickets }) => {
+  const percentage = (soldTickets / totalTickets) * 100;
 
   return (
     <div className="w-full p-4 border border-gray-200 rounded-lg">
@@ -15,7 +15,7 @@ const ProgressBar = ({ sold, total }) => {
       <div className="flex justify-between mt-2 text-sm text-gray-600">
         <span>{percentage.toFixed(0)}% Sold</span>
         <span>
-          {sold}/{total} Tickets Sold
+          {soldTickets}/{totalTickets} Tickets Sold
         </span>
       </div>
     </div>

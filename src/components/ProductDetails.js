@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import BackToProductButton from "@/components/BackToProductButton";
 import ProductInfo from "@/components/ProductInfo";
 import TicketSlider from "@/components/TicketSlider";
 import ProgressBar from "@/components/ProgressBar";
 import QuestionAnswer from "@/components/QuestionAnswer";
+import { StoreContext } from "@/context/StoreContext";
 
 const ProductDetails = ({ productData }) => {
   const [price, setPrice] = useState(null);
+  const { storeData } = useContext(StoreContext);
 
   useEffect(() => {
     if (productData) {
@@ -18,28 +20,18 @@ const ProductDetails = ({ productData }) => {
     return <div>Loading...</div>;
   }
 
-  const mockApiData = {
-    totalTickets: 100,
-    soldTickets: 11,
-    question: "Which of these is a golf brand?",
-    answers: ["Titleist", "Spessavers", "Audi"],
-    pricePerEntry: 1,
-    companyAddress: "123 Fake Street, Faketown, FA1 2KE, United Kingdom",
-  };
-
   return (
     <div className="flex flex-col justify-between h-full w-full md:w-1/2 max-w-xs mx-auto space-y-4 min-h-128">
       <BackToProductButton />
-      <ProgressBar
-        sold={mockApiData.soldTickets}
-        total={mockApiData.totalTickets}
-      />
+      <ProgressBar soldTickets={11} totalTickets={100} />
       <QuestionAnswer
-        question={mockApiData.question}
-        answers={mockApiData.answers}
-        companyAddress={mockApiData.companyAddress}
+        question={"Which of these is a golf brand?"}
+        answers={["Titleist", "Spessavers", "Audi"]}
+        companyAddress={"123 Fake Street, Faketown, FA1 2KE, United Kingdom"}
+        currency={"£"}
+        pricePerEntry={price}
       />
-      <TicketSlider totalTickets={mockApiData.totalTickets} />
+      <TicketSlider totalTickets={100} />
       {/* <ProductInfo
         title={productData.title}
         description={productData.description}
