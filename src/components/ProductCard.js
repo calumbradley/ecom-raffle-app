@@ -3,13 +3,13 @@ import Link from "next/link";
 import Price from "@/components/Price";
 import truncateText from "@/utils/truncateText";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, store }) => {
   const id = product.node.id;
-  const handle = product.node.handle;
   const title = product.node.title;
   const description = product.node.description;
-  const price = product.node.variants.edges[0].node.price;
+  const price = product.node.price;
   const imageNode = product.node.images.edges[0].node;
+  const currency = store[0].node.currency;
 
   return (
     <Link href={`/products/${id}`} passHref>
@@ -35,7 +35,7 @@ const ProductCard = ({ product }) => {
             className="text-palette-dark font-medium text-base absolute bottom-0 right-0 mb-4 pl-8 pr-4 pb-1 pt-2 bg-palette-lighter 
             rounded-tl-sm triangle font-primary"
           >
-            <Price currency="$" num={price} numSize="text-lg" />
+            <Price currency={currency} num={price} numSize="text-lg" />
           </div>
         </div>
       </div>

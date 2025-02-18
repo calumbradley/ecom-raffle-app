@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ProductProvider } from "@/context/ProductContext";
+import { StoreProvider } from "@/context/StoreContext";
 
 export const metadata = {
   title: "Golf Comps",
@@ -13,7 +14,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-        <ProductProvider>{children}</ProductProvider>
+        <StoreProvider>
+          <ProductProvider>{children}</ProductProvider>
+        </StoreProvider>
+
         <Footer />
       </body>
     </html>

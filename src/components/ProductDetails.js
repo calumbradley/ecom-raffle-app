@@ -6,15 +6,15 @@ import ProgressBar from "@/components/ProgressBar";
 import QuestionAnswer from "@/components/QuestionAnswer";
 
 const ProductDetails = ({ productData }) => {
-  const [variantPrice, setVariantPrice] = useState(null);
+  const [price, setPrice] = useState(null);
 
   useEffect(() => {
-    if (productData && productData.variants && productData.variants.edges) {
-      setVariantPrice(productData.variants.edges[0].node.price);
+    if (productData) {
+      setPrice(productData.price);
     }
   }, [productData]);
 
-  if (!productData || !productData.variants || !productData.variants.edges) {
+  if (!productData) {
     return <div>Loading...</div>;
   }
 

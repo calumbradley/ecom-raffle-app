@@ -19,12 +19,6 @@ export default function ProductPage() {
     }
   }, [decodedId, productData]);
 
-  useEffect(() => {
-    if (product) {
-      console.log(product);
-    }
-  }, [product]);
-
   if (!product) {
     return <div>Loading...</div>;
   }
