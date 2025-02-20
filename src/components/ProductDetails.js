@@ -1,20 +1,15 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import BackToProductButton from "@/components/BackToProductButton";
 import ProductInfo from "@/components/ProductInfo";
 import TicketSlider from "@/components/TicketSlider";
 import ProgressBar from "@/components/ProgressBar";
 import QuestionAnswer from "@/components/QuestionAnswer";
 import { StoreContext } from "@/context/StoreContext";
+import AddtoBasketButton from "@/components/AddtoBasketButton";
 
 const ProductDetails = ({ productData }) => {
   const [price, setPrice] = useState(null);
   const { storeData } = useContext(StoreContext);
-
-  useEffect(() => {
-    if (productData) {
-      setPrice(productData.price);
-    }
-  }, [productData]);
 
   if (!productData) {
     return <div>Loading...</div>;
@@ -29,9 +24,10 @@ const ProductDetails = ({ productData }) => {
         answers={["Titleist", "Spessavers", "Audi"]}
         companyAddress={"123 Fake Street, Faketown, FA1 2KE, United Kingdom"}
         currency={"£"}
-        pricePerEntry={price}
+        pricePerEntry={productData.price}
       />
       <TicketSlider totalTickets={100} />
+      <AddtoBasketButton />
       {/* <ProductInfo
         title={productData.title}
         description={productData.description}
