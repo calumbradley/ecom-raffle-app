@@ -10,9 +10,9 @@ const AddtoBasketButton = () => {
       {/* Add to Basket Button */}
       <button
         onClick={handleAddToBasket}
-        className="bg-palette-primary text-white hover:bg-palette-primary-dark transition-colors border border-palette-primary text-lg font-semibold pt-2 pb-1 leading-relaxed flex justify-center items-center focus:ring-2 focus:ring-offset-2 focus:ring-palette-primary focus:outline-none w-full rounded-sm font-primary"
+        className="bg-palette-primary text-white hover:bg-opacity-90 transition-colors border border-palette-primary text-lg font-semibold pt-2 pb-1 leading-relaxed flex justify-center items-center focus:ring-2 focus:ring-offset-2 focus:ring-palette-primary focus:outline-none w-full rounded-sm font-primary"
       >
-        ADD TO BASKET
+        Add To Basket
       </button>
     </div>
   );
