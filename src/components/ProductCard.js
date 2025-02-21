@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Price from "@/components/Price";
-import truncateText from "@/utils/truncateText";
+import Price from "@components/Price";
+import truncateText from "@utils/truncateText";
 
 const ProductCard = ({ product, store }) => {
   if (!product || !product.node || !store || !store[0] || !store[0].node) {

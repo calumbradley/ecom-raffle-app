@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { fetchProductData } from "@utils/fetchProductData";
 
-const AddtoBasketButton = () => {
+const AddtoBasketButton = ({ product, setProducts }) => {
   const handleAddToBasket = () => {
-    console.log(`Added ${tickets} tickets to the basket`);
-    // Add your logic for adding tickets to the basket here
+    console.log(`User clicked the add to basket button...`);
+    fetchProductData()
+      .then((data) => {
+        setProducts(data.products);
+      })
+      .catch((error) => {
+        console.error("Error fetching product data:", error);
+      });
   };
+
+  useEffect(() => {
+    console.log(
+      `only ${product.totalTickets - product.soldTickets} tickets left...`
+    );
+  }, [product]);
+
   return (
     <div>
       {/* Add to Basket Button */}

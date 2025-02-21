@@ -19,10 +19,10 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@/components/*": ["./src/components/*"],
-      "@/utils/*": ["./src/utils/*"],
-      "@/context/*": ["./src/context/*"]
+      "@*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@context/*": ["./src/context/*"]
     },
     "baseUrl": "."
   },
