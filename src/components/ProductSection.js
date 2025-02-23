@@ -21,6 +21,8 @@ function ProductSection() {
       });
   }, []);
 
+  // do an api call with id to set product?
+
   useEffect(() => {
     if (products) {
       const foundProduct = products.find((i) => i.node.id === decodedId);
